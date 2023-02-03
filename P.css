@@ -1,0 +1,255 @@
+body
+{   background-size:cover;
+  
+}
+
+.main1 img{
+  border-radius: 45% 55% 51% 49% / 52% 53% 47% 48% ;
+  width: 20%;
+  height:20%;
+  margin-left: 10%;
+
+
+}
+
+.main1{
+  margin-top: 2%;
+  display: flex;
+  margin-bottom: 5%;
+}
+.main1 h1{
+  margin-top: 5%;
+  margin-left: 10%;
+  font-size: 50px;
+
+  
+}
+
+.action {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+}
+.action .profile {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.action .profile img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+.action .menu {
+  position: absolute;
+  top: 120px;
+  right: -10px;
+  padding: 10px 20px;
+  background: #fff;
+  width: 200px;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+.action .menu.active {
+  top: 80px;
+  visibility: visible;
+  opacity: 1;
+}
+.action .menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+.action .menu h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.5em;
+}
+.action .menu h3 span {
+  font-size: 14px;
+  color: #cecece;
+  font-weight: 300;
+}
+.action .menu ul li {
+  list-style: none;
+  padding: 16px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+}
+.action .menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: 0.5s;
+}
+img{   
+    height: 300px;
+    width: 200px;
+}
+*{
+    box-sizing:border-box;
+
+}
+.slideshow-container {
+  margin-bottom: 5%;
+  max-width: 1000px;
+  position: relative;
+  margin-left: 20%;
+  
+}
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0  3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.banner-link .b1{
+  margin-top: auto;
+
+}
+.banner-link button{
+     
+  height: 60px;
+  width: 100px;
+  margin-top: 10%;
+  background-color:rgb(25, 25, 101);
+ 
+ border-block-end-style: 5px solid  20px;
+   display:inline-block;
+   border-radius: 0cm;
+    border: 4px solid white;
+    padding: 5px 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color:white;
+      cursor: pointer;
+      box-shadow: white;
+} 
+.banner-link button:hover{
+  color: white;
+box-shadow: 0 0 50px 0 rgb(182, 182, 250);
+}
+
+.text {
+  color: #3c1414;
+  font-size: 45px;
+  
+  text-align: justify;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.column{
+    float :left;
+    width :25%;
+    padding: 5px;
+    
+}
+.row::after{
+    content: "";
+    clear :both;
+    display:table;
+    
+}
+.col3{
+  margin-right :80px;
+  margin-left: 120px;
+ }
+footer{
+  position: absolute;
+  display: flex;
+}
+footer h5{
+      margin-top: 40%;
+      color:white;
+      font-size: 18px;
+      margin-bottom: 20px;
+}
+.col3 li{
+      color: white;
+      margin-bottom: 20px;
+}
+.col3 p{
+      margin-top: 40%;
+      color: white;
+      font-size: 20px;
+    }
+.col3 img{
+      width: 100px;
+      height:100px;
+    }
+.footer{
+      margin-top: 10%;
+      width: 100%;
+      height: 40%;
+      background-color:rgb(5, 5, 70);
+    }
+footer a{
+    color: white;
+  
+    margin-bottom: 20px;
+  }
+  .row2 {
+    color: white;
+    margin-top: 20px;
+    margin-left: 50px;
+   
+  }
+  .row2 h5{
+    margin-top: 5%;
+    color:white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+  }
+  .row2 img{
+    height: 50px;
+    width: 50px;
+    padding:10px;
+    margin-top: 50px;
+  }
+  .row2 p{
+    font-size: 10px;
+    color: white;
+}
