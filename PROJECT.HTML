@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+    <header>
+        
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      
+      <img src="image1.jpg" style="width:100%">
+      <div class="text">.</div>
+    </div>
+    
+    
+    <div class="mySlides fade">
+      
+      <img src="catnew.jpg" style="width: 100%">
+      <div class="text">.</div>
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="image2.jpg" style="width:100%">
+      <div class="text">.</div>
+    </div>
+    
+    </div>
+
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    
+    
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); 
+    }
+    </script>
+        
+         
+        <div class="title">
+           <h1>FourPaws</h1>
+          
+            <div class="center">
+                <ul>
+                <input type="checkbox" id="show">
+                <label for="show" class="show-btn">LOGIN</label>
+                  <div class="close">
+                    
+                    <label for="show" class="close-button" >&times</label>
+                   <div class="text">
+                      Login Form
+                   </div>
+                   <form action="#" class="loginpage">
+                      <div class="data">
+                         <label>Email </label>
+                         <input type="text" required>
+                      </div>
+                      <div class="data">
+                         <label>Password</label>
+                         <input type="password" required>
+                      </div>
+                      <div class="forgot-pass">
+                         <a href="#">Forgot Password?</a>
+                      </div>
+                      <div class="btn">
+                         <div class="inner"></div>
+                         <button type="submit">Login</button>
+                      </div>
+                      <div class="signup-link">
+                         Not a member? <a href="signup.html">Signup now</a>
+                      </div>
+                   </form>          
+           </div>
+                </div>
+           
+            <div class="center2">
+                <a href="signup.html">SIGNUP</a></ul>
+        </div>
+        
+        </div>
+      
+        
+
+  <div class = is layout divsion flex box column></div>
+        <div class="container">
+              <h1>ABOUT</h1></div>
+        
+     <div class="content">
+      <div class="block">
+        <h3>Welcome to our Pet Adoption website! <br>
+          We are dedicated to helping animals in need find loving forever homes. Our goal is to match the right<br>
+           pet with the right family, and to ensure that every animal is given the love and care they deserve.<br>
+          <br>
+          We believe that every pet deserves a second chance and a happy life, and we work tirelessly to make <br>that a
+           reality for as many animals as possible. <br>
+          <br>
+          We are passionate about animal welfare and are committed to promoting responsible pet ownership. <br><br>
+          If you're interested in adopting a pet, please take a look at our available animals and fill out an adoption application.<br>
+          <br>
+          Thank you for choosing to adopt, and for giving a furry friend a second chance at happiness!.
+        </h3>
+     </div>
+
+           <img src="pet.gif" alt="gif">
+          </div>
+        
+      
+</header>
+<div class="frames">
+    <h2 >Need Best friend???</h2>
+    <h3>Adopt a pet....</h3>
+   </div>
+   <div class="frnd">
+    <div>
+        <img src="row1.jpg" alt="pic q">
+    </div>
+    <div>
+        <img src="row2.jpg" alt="pic q">
+    </div>
+    <div>
+        <img src="rabbit.jpg" alt="pic q">
+    </div>
+    <div>
+        <img src="row4.jpg" alt="pic q">
+    </div>
+   </div>
+   <div class="adv">
+    <img src="add.png" alt="dog">
+    
+    <a class="banner-link" href="signup.html">
+      <button class="adopt-love-cta" type="button">Adopt a pet</button>
+    </a>
+   </div>
+   <div class="faqs">
+    <h1>FAQS</h1>
+   <button class="accordion">Why should i adopt a pet?</button>
+<div class="panel">
+  <p> Did you know that over 2000 people per hour in India run a search right here looking to adopt a pet? 
+    Pet adoption is becoming the preferred way to find a new pet. Adoption will always be more convenient than buying a 
+    puppy for sale from a pet shop or finding a kitten for sale from a litter. Pet adoption brings less stress and 
+    more savings! So what are you waiting for? Go find that perfect pet for home!</p>
+</div>
+
+<button class="accordion">What is the fee to adopt a pet?</button>
+<div class="panel">
+  <p>No, there is no fee for pet adoption on FourPaws. However, if you adopt from a different city pet owner/rescuer 
+    can ask for travel charges. In case if you find someone asking for charges you can write us at  FourPaws@gmail.com</a></a></p>
+</div>
+
+<button class="accordion">How old do I need to be to adopt a pet?</button>
+<div class="panel">
+  <p>You need to be at least 18+ years old to adopt</p>
+</div>
+<button class="accordion">Can you return an adopted pet?</button>
+<div class="panel">
+  <p>
+    <p>
+      We understand it can be hard to get an adjusted pet in the new home and vice versa, as long as your reason for returning is reasonable, you'll be welcome to put it up for adoption again</p>
+</div>
+</div>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+  </script>
+   
+   
+   
+   
+   
+   <footer class="footer">
+    <div class="col3">
+     <p class="text-muted">© 2023</p><br>
+     <img src ="paw-removebg-preview.jpg">
+    </div>
+
+  
+
+    <div class="col3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="signup.html" class="nav-link p-0 text-muted">SignUp</a></li>
+      </ul>
+    </div>
+
+    <div class="col3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+      </ul>
+    </div>
+    <div class="row2">
+      <h5>Contact Us</h5>
+      <li>
+        9718260722
+      </li>
+      <li> 9667224435</li>
+      <li>9540937616</li>
+      <img src="mail.jpg" alt="mail">
+      <img src="call.jpg" alt="call">
+      <p>fourpaws@gmail.com</p>
+    </div>
+   </footer>
+   
+   
+  
+     </body>
+</html>
