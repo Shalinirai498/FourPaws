@@ -1,94 +1,41 @@
 <html>
     <head>
-      
         <link rel="stylesheet" href="account.css">
         <title>
         fourpaws
         </title>
     </head>
     <body>
-      <header>
-        <div class ="head">
-        <div class ="profile" onclick="menuToggle();">
-          <img src="acc.jpg" alt ="My profile">
-          </div>
-          <div class ="menu">
-          <ul>
-            <li>
-              <a href="My profile">My profile</a>
-            </li>
-            <li>
-              <a href="Edit profile">Edit profile</a>
-            </li>
-            <li>
-              <a href="Notification">Notification</a>
-            </li>
-            <li>
-              <a href="logout">logout</a>
-            </li>
-          </ul>
-        </img>
-        </div>
-        </div>
-      </header>
-      <script>
-        function menuToggle() {
-          const toggleMenu = document.querySelector(".menu");
-          toggleMenu.classList.toggle("active");
-        }
-      </script>
-      <ul class="slideshow">
-      </ul>
-      <div class="main1">
-        <img src="s1.gif" >
-        <h1><b> FOURPAWS </b></h1>
-        <img src="s2.gif" >
-       </div>
-       <div class="slideshow-container">
+      
+      <h1><b> FOURPAWS </b></h1>
+      <div class="topnav">
+        <a href ="PROJECT.HTML">HOME</a>
+        <a href ="FAQs.html">FAQs</a>
+        <a href ="#c">CONTACT</a>
+        <a href ="MY WISHLIST">WISHLIST</a>
 
-        <div class="mySlides fade">
-          <img src="img1.jpg" style="width:100%">
-          <div class="text">Caption Text</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <img src="img2.jpg" style="width:100%">
-          <div class="text">Caption Two</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <img src="img3.jpeg" style="width:100%">
-          <div class="text">Caption Three</div>
-        </div>
       </div>
-
-       <div class="row">
+      
+       <div class="row"  style ="background-color:rgb(249, 199, 207)">
         <div class="column">
           <a href="AddBtn.html"><img src="add.jpeg"></a>
           <a class="banner-link" href="AddBtn.html">
             <button class="b1" type="button">ADD</button></a>
         </div>
         <div class="column">
+          <a href="default.asp"><img src="notification.jpg"></a>
+          <a class="banner-link" href="notify.html">
+            <button class="b1" type="button">NOTIFICATION</button></a>
+        </div>
+        <div class="column">
           <a href="default.asp"><img src="search.jpeg"> </a>
           <a class="banner-link" href="signup.html">
             <button class="b1" type="button">SEARCH</button>
           </a>
+       </div>
        
-        </div>
-        <div class="column">
-          <a href="default.asp"><img src="notification.jpg"></a>
-          <a class="banner-link" href="signup.html">
-            <button class="b1" type="button">INVITES</button>
-          </a>
-        </div>
-        <div class="column">
-          <a href="default.asp"><img src="wishlist.jpg"></a>
-          <a class="banner-link" href="signup.html">
-            <button class="b1" type="button">WISHLIST</button>
-          </a>
-        </div>
       </div>
-  
+      <p> <b><i>A Furry Friend is just a click away</i></b></p>
        <footer class="footer">
         <div class="col3">
          <p class="text-muted">© 2023</p><br>
@@ -126,7 +73,7 @@
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
           </ul>
         </div>
-        <div class="row2">
+        <div class="row2"id="c">
           <h5>Contact Us</h5>
           <li>
             9718260722
@@ -137,27 +84,7 @@
           <img src="call.jpeg" alt="call">
           <p>fourpaws@gmail.com</p>
         </div>
-       </footer>
-       <script>
-        let slideIndex = 0;
-        showSlides();
-        
-        function showSlides() {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          
-          slides[slideIndex-1].style.display = "block";  
-          
-          setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-        </script>
-        
+       </footer>  
     </body>
 </html>  
         
